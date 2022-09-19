@@ -1,0 +1,274 @@
+@charset "utf-8";
+/* CSS Document */
+*{margin: 0;
+padding: 0;
+	box-sizing: border-box;
+}
+/*nav and header*/
+header{
+	overflow: hidden;
+	width: 1540px;
+	height: 100px;
+	background-color: #232b2b;
+	border-bottom: solid #dc3d24 25px;
+}
+header div{
+	float: left;
+	margin-left: 250px;
+	color: white;
+	padding-top: 20px;
+}
+header nav ul{
+	margin-right: 200px;
+	right: 200px;
+}
+nav ul li{
+	margin: 0 15px;
+	display: inline-block;
+	float: right;
+	height: 80px;
+	width: 120px;
+	background-color: #dc3d24;
+	text-align: center;
+	padding-top: 30px;
+}
+nav ul a{
+	text-decoration: none;
+	font-weight: bolder;
+	color: white;
+}
+nav ul li:hover{
+	background-color: maroon;
+}
+nav ul a:hover{
+}
+nav ul a li div:hover{
+	text-decoration: underline;
+	color: antiquewhite;
+
+}
+/*main and aside*/
+.lorem{
+	margin-top: 95px;
+}
+main{
+	overflow: auto;
+		
+	margin-left: 250px;
+	float: left;
+	width: 600px;
+}
+main div{
+		
+	
+}
+.fashion{
+	height: 390px;
+	width: 585px;
+	padding-top: 40px;
+}
+.firstp{
+	padding: 35px 0;
+	border-bottom: 5px solid #dc3d24;
+}
+h3 {
+	padding: 30px 0;
+	color: #6d4b36
+}
+h1{
+	color: #6d4b36;
+}
+#lastp{
+	border-bottom: none
+}
+.pre{
+	color: #cccccc;
+	font-weight: smaller;
+	margin-bottom:30px;
+	border-left: 2px dotted #cccccc;
+	padding-left:10px
+}
+.aside1{
+	height:340px;
+	width:390px;
+	border-top: solid #dc3d24 20px;
+	float: right;
+	margin-right: 200px;
+	background-color: #232b2b;
+	padding:10px 50px;
+	color: white;
+}
+.aside2{
+	width: 390px;
+	border-top: solid #dc3d24 20px;
+	float: right;
+	margin-right: 200px;
+	background-color: #232b2b;
+	margin-top: 35px;
+	margin-bottom: 60px;
+	color: white;
+
+}
+.h44{
+	padding-left: 50px;
+	padding-top: 30px;
+	padding-bottom: 25px;
+}
+
+
+/*footer*/
+footer{
+	height: 120px;
+	border-top: 20px;
+	padding-left: 210px;
+	border-top: solid #dc3d24 30px ;
+	padding-top: 30px;
+	color: white;
+	overflow: hidden;
+	width: 1540px;
+	background-color: #232b2b;
+}
+
+/* =============================================================================
+   Lists
+   ========================================================================== */
+
+ul, ol { margin: 1em 0; padding: 0 0 0 40px; }
+dd { margin: 0 0 0 40px; }
+nav ul, nav ol { list-style: none; margin: 0; padding: 0; }
+
+
+/* =============================================================================
+   Custom Forms
+   ========================================================================== */
+
+
+	form#payment {
+		background: #E3AE57;
+		counter-reset: fieldsets;
+		padding: 4%;
+		width: 96%;
+		}
+		
+		form#payment ol {padding:0}
+		
+		form#payment fieldset {
+			border: none;
+			margin-bottom: 10px;
+			}
+		
+		form#payment fieldset:last-of-type {
+			margin-bottom: 0;
+			}
+			
+		form#payment legend {
+			color: #FFF;
+			font-size: 16px;
+			font-weight: bold;
+			padding-bottom: 10px;
+			}
+			
+			form#payment > fieldset > legend:before {
+				content: "Step " counter(fieldsets) ": ";
+				counter-increment: fieldsets;
+				}
+			
+			form#payment fieldset fieldset legend {
+				color: #111111;
+				font-size: 13px;
+				font-weight: normal;
+				padding-bottom: 0;
+				}
+		
+		form#payment ol li {
+			background: #b9cf6a;
+			background: rgba(255,255,255,.3);
+			border-color: #e3ebc3;
+			border-color: rgba(255,255,255,.6);
+			border-style: solid;
+			border-width: 1px;
+			line-height: 30px;
+			list-style: none;
+			padding: 5px 10px;
+			margin-bottom: 2px;
+			}
+						
+			form#payment ol ol li {
+				background: none;
+				border: none;
+				float: left;
+				}
+		
+		form#payment label {
+			float: left;
+			font-size: 13px;
+			width: 110px;
+			}
+			
+		form#payment fieldset fieldset label {
+			background:none no-repeat left 50%;
+			line-height: 20px;
+			padding: 0 0 0 30px;
+			width: auto;
+			}
+				
+			form#payment label[for=visa] {
+				background-image: url(visa.gif);
+				}
+			form#payment label[for=amex] {
+				/*background-image: url(amex.gif);*/
+				}
+			form#payment label[for=mastercard] {
+				background-image: url(mastercard.gif);
+				}
+				
+			form#payment fieldset fieldset label:hover {
+				cursor: pointer;
+				}
+			
+		form#payment input:not([type=radio]),
+		form#payment textarea {
+			background: #ffffff;
+			border: none;
+			-moz-border-radius: 3px;
+			-webkit-border-radius: 3px;
+			-khtml-border-radius: 3px;
+			border-radius: 3px;
+			font: italic 13px Georgia, "Times New Roman", Times, serif;
+			outline: none;
+			padding: 4px;
+			width: 98%;
+			}
+				
+			form#payment input:not([type=submit]):focus,
+			form#payment textarea:focus {
+				background: #eaeaea;
+				}
+				
+			form#payment input[type=radio] {
+				float: left;
+				margin-right: 5px;
+				}
+					
+		form#payment button {
+			background: #384313;
+			border: none;
+			-moz-border-radius: 20px;
+			-webkit-border-radius: 20px;
+			-khtml-border-radius: 20px;
+			border-radius: 20px;
+			color: #ffffff;
+			display: block;
+			font: 18px GeosansLight;
+			letter-spacing: 1px;
+			margin: auto;
+			padding: 7px 25px;
+			text-shadow: 0 1px 1px #000000;
+			text-transform: uppercase;
+			}
+				
+			form#payment button:hover {
+				background: #1e2506;
+				cursor: pointer;
+				}
+				.aside2{padding: 30px}
